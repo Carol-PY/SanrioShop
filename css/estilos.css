@@ -1,0 +1,500 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 17px;
+	font-weight: 300;
+	font-family:'Rubik';
+
+}
+
+
+body, p{
+	background-color: whitesmoke;
+	color: lightpink;
+}
+
+ul{
+	list-style: none;
+}
+li{
+	text-align: center;
+	color: lightpink;
+	font-weight: 500;
+}
+a{
+	text-decoration: none;
+	color: lightpink;
+
+	
+}	
+/* ARREGLOS DE TEXTO RIP*/
+
+h2{
+	text-align: center;
+}
+
+h3{
+	color: ghostwhite;
+	text-align: center;
+}
+
+h4{
+	color: pink;
+	font-weight: 200;
+	text-align: center;
+}
+
+
+
+/*   TEXT CORNER   */
+
+.price_txt{
+	color: hotpink;
+	display: block;
+	text-align: center;
+}
+
+
+.a{
+	color: hotpink;
+	padding: 10px 10px;
+	text-align: center;
+
+}
+
+.text-1{
+	background-color: transparent;
+	color: whitesmoke;
+	font-weight: 600;
+	padding-bottom: 10px;
+
+}
+
+.text-2{
+	padding: 5px 5px;
+	text-align: center;
+	font-weight: 200;
+}
+
+
+
+img{
+	width: 100%;
+}
+
+#portada2{
+	width: 100%;
+}
+
+
+/*        FIN DEL TEXT CORNER :P        */
+
+
+.header-logo{
+	display: block;
+	
+}
+
+.header-menu, .block-popular, .block-products, .foot{
+	margin: 1rem;
+	display: block;
+}
+
+.header-logo{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.header-menuList nav{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.header-menuList li{
+	padding: 10px 5px;
+}
+
+.header-menuList a:hover{
+	color: hotpink;
+	transition: 0.5s;
+}
+
+#portada{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-image: url(../imagenes/portada2.webp);
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.block-popular-samples{
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.sample2{
+	padding: 2px 2px;
+}
+
+.sample3{
+	padding: 2px 2px;
+}
+
+.sample1,.sample4,.sample7,.sample10,.sample13, .sample14, .sample15, .sample16{
+	display: none;
+}
+
+
+.sample5{
+	padding: 2px 2px;
+}
+
+.sample6{
+	padding: 2px 2px;
+}
+
+
+.sample8{
+	padding: 2px 2px;
+}
+
+.sample9{
+	padding: 2px 2px;
+}
+
+
+
+.sample11{
+	padding: 2px 2px;
+}
+
+.sample12{
+	padding: 2px 2px;
+}		
+
+
+
+
+.block-productsContainer{
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*          FOOTER          */
+
+#foot{
+	background-color: hotpink;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.footerIcon{
+	width: 40px;
+}
+
+#header{
+	display: flex;
+	flex-direction: column;
+}
+
+/*
+.foot1 ul{
+	padding: 5px 10px;
+}
+
+.foot2 ul{
+	padding: 5px 10px;
+}
+
+*/
+
+/*COSAS DE FLEX*/
+.d-flex{
+	display: flex;
+}
+
+.d-flex-direction{
+	flex-direction: column;
+}
+
+.d-flex-center{
+	justify-content: center;
+}
+
+.d-flex-middle{
+	align-items: center;
+}
+
+.d-flex-wrap{
+	flex-wrap: wrap;
+}
+
+.d-flex-justifique{
+	justify-content: space-between;
+}
+
+.grid{
+	display: grid;
+}
+
+  
+ /*COSAS DEL GRID */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#grid-1{
+		
+	}
+
+	.block-popular-samples, ..block-productsContainer{
+		padding: 0 5px;
+	}
+
+
+
+@media (min-width: 720px){
+
+ 	.sample1, .sample4, .sample7, .sample10{ 
+	display: block;
+	padding: 2px 2px;
+	}
+
+	#headerId{
+		justify-content: space-evenly;
+	}
+
+
+	.block-popular-samples{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0 10vw;
+	}
+
+	.block-productsContainer{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 0 12vw;
+
+	}
+
+	#foot{
+		display: flex;
+		flex-direction: row;
+    	justify-content: space-around;	
+    }
+
+	.text-1{
+		padding: 25px;
+	}
+
+	#portada{
+	background-image: url(../imagenes/portada1.webp);
+	background-repeat: no-repeat;
+	
+	}
+
+
+	.header-logo-imagen{
+		width: 30vw;
+		height: 10vw;
+
+	}
+
+	#header{
+		flex-direction: row;
+	}
+
+}
+@media (min-width: 1000px){
+
+	.sample13, .sample14, .sample15, .sample16{
+		display: block;
+		padding: 2px 2px;
+
+ 	}
+ 	.header-logo{
+		width: 30vw;
+		height: 10vw;
+	}
+
+	.header-menuList li a{
+		font-size: 30px;
+	}
+
+    .d-flex {	
+		align-items: flex-end;
+	}
+
+
+	
+
+	#foot{
+		align-items: center;
+		height: 12vw;
+	}
+
+	h4{
+		font-weight: 500;
+	}
+
+	.price_txt{
+		font-weight: 400;
+	}
+
+
+}
+
+section p{
+	padding: 20px 20px;
+}
+
+
+
+
+
+
+	*/
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/*
+ACA  COSAS DEL LOGO
+
+
+.header-logo{
+	min-height: 100px;
+}
+
+.header-menu{
+	max-width: 1400px;
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+.header-logo-imagen{
+	margin: auto;
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: 150px;
+	max-width: 80%;
+}
+
+.block-text{
+	padding: 1rem 1rem;
+}
+
+
+
+
+
+
+/* NAV 
+.header-menu{
+	background-color: floralwhite;
+	width: 100%;
+	border-top: 2px solid rgb(255, 153, 204, 0.3);
+	border-bottom: 2px solid rgb(255, 153, 204, 0.3);
+	
+}
+
+.header-menu li{
+	display: inline;
+	cursor: pointer;
+	list-style: none;
+	position: relative;
+	text-transform: uppercase;
+
+}
+.list-item{
+	padding: 0px 10px;
+}
+
+.list-item a{
+	color: pink;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.list-item a:hover{
+
+	color: whitesmoke;
+}
+
+.list-item li:hover {
+	display: block;
+	background-color:rgb(0, 0, 0, 0.8)
+	
+}
+
+/* ACA EL TEXTO INICIO
+.block-text{
+	background-color:rgb(255, 204, 204);
+	padding: 70px;
+}
+
+.text-1{
+	background-color:rgb(255, 204, 204) ;
+	color: whitesmoke;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5;
+	height: 2vw;
+
+}
+.block-portada{
+	width: 100%;
+	height: 10vw;
+	position: fixed;
+}
+*/
+
